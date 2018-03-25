@@ -1,0 +1,30 @@
+<img src="/assets/images/burger.png" alt="burger" id="burgerImg">
+<h1>Eat Da Burger!</h1>
+<div id=playSpace class="clearfix">  
+    <div id=leftSpace>
+        {{#each burgers}}
+            <div class="burgerPanel">{{this.id}}. {{this.burger_name}}</div> 
+        {{/each}}
+    </div>
+    <div id=midSpace>
+        {{#each burgers}}
+            <div class="buttonPanel">
+                <button data-burgerid={{this.id}} type="submit" class="devourButton">Devour It!</button>
+            </div>
+        {{/each}}
+    </div>
+    <div id=rightSpace>
+        {{#each devBurgers}}
+            <div class="burgerPanel">{{this.id}}. {{this.burger_name}}</div>
+        {{/each}}
+    </div>
+</div>
+<div id=inputSpace>
+    <form role="form" id="devour">
+        <div class="form-group" >
+            <input type="text" class="form-control" id="burgerInput">
+        </div>
+        <button id="addBurger" type="submit">Submit</button>
+    </form>
+    <h6>Enter a burger you want to eat and click the "Submit" button!</h6>
+</div>

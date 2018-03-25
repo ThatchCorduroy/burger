@@ -1,0 +1,78 @@
+body {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  line-height: 150%;
+  color: rgb(255, 0, 0);
+  background: rgb(6, 237, 252);
+}
+
+#burgerImg {
+  width: 200px;
+  height: 200px;
+}
+
+#playSpace {
+  width: 60%;
+  margin: 1% 20%;
+}
+
+#leftSpace {
+  width: 40%;
+  margin: 0;
+  float: left;
+}
+
+#midSpace {
+  width: 20%;
+  float: left;
+  text-align: left;
+}
+
+#rightSpace {
+  width: 40%;
+  float: right;
+}
+
+.burgerPanel {
+  width: 100%;
+  height: 50px;
+  background: rgb(255, 255, 255);
+  margin: 10px 0px;
+}
+
+.buttonPanel {
+  height: 60px;
+}
+
+.devourButton {
+  margin-top: 25px;
+  margin-left: 10px;
+}
+
+/* ------------------------------- */
+
+#inputSpace {
+  width: 40%;
+  margin: 0 30%;
+}
+
+#devour {
+  width: 50%;
+  margin: 0 25%;
+}
+
+#burgerInput {
+  width: 100%;
+  height: 50px;
+}
+
+/* ------------------------------- */
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
